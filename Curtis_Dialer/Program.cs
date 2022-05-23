@@ -1,5 +1,8 @@
 ﻿using System;
-
+// Name: Micah Curtis
+// Course: IT 112
+// NOTES: No notes
+// BEHAVIORS NOT IMPLENTED AND WHY: All behaviors present
 namespace Curtis_Dialer
 {
     class Program
