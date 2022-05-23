@@ -11,7 +11,7 @@ namespace Curtis_Dialer
         private string _dialer;
         public HomePhone(string companyName, string companyNumber, int phoneType) :base(companyName, companyNumber, phoneType) 
         {
-            _dialer = companyName + "is being dialed using " + companyNumber;
+            _dialer = companyName + " is being dialed using " + companyNumber + "...";
         }
         public override string Dial()
         {
