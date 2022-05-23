@@ -27,7 +27,7 @@ namespace Curtis_Dialer
             }
             else
             {
-                _dialer = _companyName + " is being dialed using +1" + _companyNumber + "...";
+                _dialer = _companyName + " is being dialed using 1+ " + _companyNumber + "...";
             }
             return _dialer;
         }
