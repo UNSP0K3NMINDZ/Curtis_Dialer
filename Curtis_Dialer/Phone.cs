@@ -11,13 +11,18 @@ namespace Curtis_Dialer
         private string _companyNumber;
         private string _companyName;
         private int _phoneType;
+        private string _dialer;
 
         public Phone(string companyName, string companyNumber, int phoneType)
         {
             _companyName = companyName;
             _companyNumber = companyNumber;
             _phoneType = phoneType;
+            _dialer = companyName + " is being dialed using " + companyNumber + "...";
         }
-        public abstract string Dial();
+        public virtual string Dial()
+        {
+            return _dialer;
+        }
     }
 }

@@ -1,8 +1,7 @@
 ﻿using System;
 // Name: Micah Curtis
 // Course: IT 112
-// NOTES: I used an abstract method inside of Phone and defined _dialer separately in both
-// sub-classes to output the correct dial message.
+// NOTES: No notes
 // BEHAVIORS NOT IMPLENTED AND WHY: All behaviors present
 namespace Curtis_Dialer
 {
