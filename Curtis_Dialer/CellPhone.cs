@@ -8,9 +8,14 @@ namespace Curtis_Dialer
 {
     class CellPhone : Phone
     {
-        public CellPhone(string companyName, string companyNumber, int yesNo) : base(companyName, companyNumber, yesNo)
+        private string _dialer;
+        public CellPhone(string companyName, string companyNumber, int phoneType) : base(companyName, companyNumber, phoneType)
         {
-
+            _dialer = companyName + " is being dialed using 1+ " + companyNumber;
+        }
+        public override string Dial()
+        {
+            return _dialer;
         }
     }
 }

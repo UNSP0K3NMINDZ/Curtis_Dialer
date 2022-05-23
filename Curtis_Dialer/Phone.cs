@@ -10,26 +10,14 @@ namespace Curtis_Dialer
     {
         private string _companyNumber;
         private string _companyName;
-        private int _yesNo;
-        private string _dialer;
-        
-        public Phone (string companyName, string companyNumber, int cellOrHome)
+        private int _phoneType;
+
+        public Phone(string companyName, string companyNumber, int phoneType)
         {
             _companyName = companyName;
             _companyNumber = companyNumber;
-            _yesNo = cellOrHome;
+            _phoneType = phoneType;
         }
-        public string Dial()
-        {
-            if(_yesNo == 1)
-            {
-                _dialer = _companyName + " is being dialed using " + _companyNumber + "...";
-            }
-            else
-            {
-                _dialer = _companyName + " is being dialed using 1+ " + _companyNumber + "...";
-            }
-            return _dialer;
-        }
+        public abstract string Dial();
     }
 }
